@@ -74,7 +74,7 @@ def main():
 # str, int, float, bool, list of strings, list of numbers.
 
     company_name: str = "Ganyo Data Solutions, LLC"
-    count_active_projects: 7
+    count_active_projects: int = 7
     company_founded_year: int = 2023
     has_international_presence: bool = True
     average_satisfation_score: float = 4.19
@@ -86,9 +86,10 @@ def main():
     company_name_string: str = f"Company Name: {company_name}"
     company_year_string: str = f"Company Founded: {company_founded_year}"
     company_works_string: str = f"Accepts International Clients: {has_international_presence}"
-    company_client_satisfaction: str = f"Client Satisfaction: {average_client_score}"
+    company_client_satisfaction: str = f"Client Satisfaction: {average_satisfation_score}"
     services_string: str = f"Services Offered: {services_offered}"
     active_projects_string: str = f"Active Projects: {count_active_projects}"
+    
 
 #5. Calculate Descriptive Statistics-min(), max(), len(), mean(), mode(), median(),
   # and stdev()
@@ -117,7 +118,7 @@ def main():
     Company: {company_name}
     Current Projects: {count_active_projects}
     International: {has_international_presence}
-    Client Satisfaction: {average_client_satisfaction}
+    Client Satisfaction: {mean}
     Service: {services_offered}
     The Numbers: f"{stats_string}""
     """
